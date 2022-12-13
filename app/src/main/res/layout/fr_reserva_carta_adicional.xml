@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
-        android:text="Total:"
+        android:text="@string/total"
         android:textColor="#7E0000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -123,35 +123,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.779" />
 
-    <EditText
-        android:id="@+id/editTextPrecioTotal"
-        android:layout_width="97dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:fontFamily="@font/lato"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
-        app:layout_constraintStart_toEndOf="@+id/textViewTotal1"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.17" />
-
-    <ImageButton
-        android:id="@+id/buttonFlecha"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:backgroundTint="#7E0000"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/laBistecca"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
-        app:srcCompat="@drawable/flecha" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="331dp"
@@ -211,29 +182,6 @@
             android:textColor="#B23A2C"
             android:translationX="110dp"
             android:translationY="65dp" />
-
-        <ImageButton
-            android:id="@+id/imageButtonIzq3"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
-        <ImageButton
-            android:id="@+id/imageButtonDer3"
-            android:layout_width="28dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            android:translationX="65dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
 
         <TextView
             android:id="@+id/textViewCantidad3"
@@ -307,29 +255,6 @@
             android:translationX="110dp"
             android:translationY="65dp" />
 
-        <ImageButton
-            android:id="@+id/imageButtonIzq2"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
-        <ImageButton
-            android:id="@+id/imageButtonDer2"
-            android:layout_width="28dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            android:translationX="65dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
         <TextView
             android:id="@+id/textViewCantidad2"
             android:layout_width="35dp"
@@ -401,29 +326,6 @@
             android:translationX="110dp"
             android:translationY="65dp" />
 
-        <ImageButton
-            android:id="@+id/imageButtonIzq1"
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
-        <ImageButton
-            android:id="@+id/imageButtonDer1"
-            android:layout_width="28dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="230dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#FFFFFF"
-            android:translationX="65dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_add_circle_24" />
-
         <TextView
             android:id="@+id/textViewCantidad1"
             android:layout_width="35dp"
@@ -435,5 +337,18 @@
             android:translationX="258dp"
             android:translationY="40dp" />
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewCalculoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato"
+        android:text="S/ X.00"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotal1"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

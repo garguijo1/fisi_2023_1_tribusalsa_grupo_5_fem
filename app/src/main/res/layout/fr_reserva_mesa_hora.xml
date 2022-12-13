@@ -7,10 +7,66 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/buttonHora3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#B23A2C"
+        android:text="6:00 pm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <Button
+        android:id="@+id/buttonHora4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#B23A2C"
+        android:text="7:00 pm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <Button
+        android:id="@+id/buttonHora5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="175dp"
+        android:backgroundTint="#B23A2C"
+        android:text="8:00 pm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <Button
+        android:id="@+id/buttonHora6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#B23A2C"
+        android:text="9:00 pm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <Button
+        android:id="@+id/buttonHora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="#B23A2C"
+        android:text="5:00 pm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <Button
         android:id="@+id/btnReservar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="150dp"
         android:backgroundTint="#B23A2C"
         android:fontFamily="@font/lato_bold"
@@ -21,85 +77,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="691dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#B23A2C"
-        android:text="4:00 P.M."
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="483dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="80dp"
-        android:backgroundTint="#B23A2C"
-        android:text="4:00 P.M."
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="416dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="80dp"
-        android:backgroundTint="#B23A2C"
-        android:text="4:00 P.M."
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="483dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textViewMetodoPago4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
         android:text="Cantidad de personas"
         android:textColor="#7E0000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginStart="68dp"
+        android:layout_marginTop="14dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_remove_circle_24"
-        tools:layout_editor_absoluteY="611dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago4"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_24" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="25dp"
         android:layout_height="27dp"
         android:layout_marginStart="5dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="5dp"
         android:text="1"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
-        tools:layout_editor_absoluteY="619dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago4" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="232dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_add_circle_24_ama"
-        tools:layout_editor_absoluteY="611dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago4"
+        app:srcCompat="@drawable/ic_baseline_add_circle_24_ama" />
 
     <TextView
         android:id="@+id/textViewMetodoPago3"
@@ -161,7 +188,7 @@
         android:textColor="#7E0000"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/hola2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewUsuarioCarta"
         app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -183,22 +210,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/buttonFlecha4"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="56dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#7E0000"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/laBistecca2"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
-        app:srcCompat="@drawable/flecha" />
 
     <TextView
         android:id="@+id/laBistecca5"
@@ -239,36 +250,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
+        android:id="@+id/buttonHora1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="#B23A2C"
-        android:text="6:00 P.M."
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintHorizontal_bias="0.713"
+        android:text="4:00 pm"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="416dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="92dp"
-        android:backgroundTint="#B23A2C"
-        android:text="4:00 P.M."
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="351dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="101dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="76dp"
-        android:backgroundTint="#B23A2C"
-        android:text="5:00 P.M."
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
