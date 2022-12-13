@@ -116,7 +116,7 @@
         android:text="Carta por reservar"
         android:textColor="#7E0000"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView1"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewSede2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +146,7 @@
             android:padding="2dp">
 
             <ImageView
-                android:id="@+id/imageViewPlatillo3"
+                android:id="@+id/imageViewSede3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -154,7 +154,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewNombrePlatillo3"
+            android:id="@+id/textViewNombreSede3"
             android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
@@ -164,7 +164,7 @@
             android:translationY="15dp" />
 
         <TextView
-            android:id="@+id/textViewNombreCategoria3"
+            android:id="@+id/textViewNombreDireccion3"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
@@ -218,7 +218,7 @@
             android:padding="2dp">
 
             <ImageView
-                android:id="@+id/imageViewPlatillo2"
+                android:id="@+id/imageViewSede1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -226,7 +226,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewNombrePlatillo2"
+            android:id="@+id/textViewNombreSede1"
             android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
@@ -236,7 +236,7 @@
             android:translationY="15dp" />
 
         <TextView
-            android:id="@+id/textViewNombreCategoria2"
+            android:id="@+id/textViewNombreDireccion1"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
@@ -268,7 +268,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView1"
+        android:id="@+id/cardViewSede2"
         android:layout_width="331dp"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
@@ -289,7 +289,7 @@
             android:padding="2dp">
 
             <ImageView
-                android:id="@+id/imageViewPlatillo1"
+                android:id="@+id/imageViewSede2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -297,7 +297,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewNombrePlatillo1"
+            android:id="@+id/textViewNombreSede2"
             android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
@@ -307,7 +307,7 @@
             android:translationY="15dp" />
 
         <TextView
-            android:id="@+id/textViewNombreCategoria1"
+            android:id="@+id/textViewNombreDireccion2"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"

@@ -16,4 +16,8 @@
     <string name="puedes_acceder">Puedes acceder al apartado de historial de reservas para visualizar mayor detalle</string>
     <string name="imagenconfirmacioncarta">imagenConfirmacionCarta</string>
     <string name="total">Total:</string>
+    <string name="la_bistecca_mesa_sede">LA BISTECCA</string>
+    <string name="pasta_grill_mesa_sede">Pasta-Grill</string>
+    <string name="holaReservaMesaSede">Hola,</string>
+    <string name="usuarioReservaMesaSede">Usuario</string>
 </resources>
