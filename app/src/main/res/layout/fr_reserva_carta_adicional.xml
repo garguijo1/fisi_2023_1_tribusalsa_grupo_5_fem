@@ -8,6 +8,19 @@
     android:backgroundTint="#FAFAFA"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/imageButtonRetroceder4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#7E0000"
+        android:contentDescription="@string/botonretroceder"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView2"
         android:layout_width="411dp"
@@ -111,6 +124,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
         android:text="Carta por reservar"

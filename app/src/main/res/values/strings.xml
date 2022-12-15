@@ -20,4 +20,14 @@
     <string name="pasta_grill_mesa_sede">Pasta-Grill</string>
     <string name="holaReservaMesaSede">Hola,</string>
     <string name="usuarioReservaMesaSede">Usuario</string>
+    <string name="botonretroceder">botonRetroceder</string>
+    <string name="metodo_de_pago">Método de pago</string>
+    <string name="pagovisa">pagoVisa</string>
+    <string name="pagopaypal">pagoPayPal</string>
+    <string name="pagoamericanexpress">pagoAmericanExpress</string>
+    <string name="pagodinersclub">pagoDinersClub</string>
+    <string name="pagomastercard">pagoMastercard</string>
+    <string name="n_de_tarjeta">N° de tarjeta</string>
+    <string name="fecha_exp">Fecha Exp</string>
+    <string name="cvv">CVV</string>
 </resources>
