@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout5"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FAFAFA">
 
     <Button
         android:id="@+id/buttonHora3"
@@ -259,5 +261,18 @@
         android:text="4:00 pm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRetroceder1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#7E0000"
+        android:contentDescription="botonRetroceder"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

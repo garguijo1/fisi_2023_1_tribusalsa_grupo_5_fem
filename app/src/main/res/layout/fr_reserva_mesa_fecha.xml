@@ -9,8 +9,21 @@
     android:backgroundTint="#FAFAFA">
 
 
+    <ImageButton
+        android:id="@+id/imageButtonRetroceder3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#7E0000"
+        android:contentDescription="@string/botonretroceder"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha" />
+
     <TextView
-        android:id="@+id/textViewMetodoPago2"
+        android:id="@+id/textViewCalendarioReserva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
