@@ -8,6 +8,7 @@
     android:background="#FFFFFF"
     android:backgroundTint="#FAFAFA">
 
+
     <TextView
         android:id="@+id/textViewMetodoPago2"
         android:layout_width="wrap_content"
@@ -20,10 +21,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/calendarView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pastaGrill8"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <TextView
         android:id="@+id/pastaGrill8"
@@ -38,19 +39,19 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hola3"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
         android:id="@+id/hola3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Hola,"
+        android:text="Hola"
         android:textColor="#7E0000"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -61,11 +62,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/hola4"
+        android:id="@+id/nombreCliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="160dp"
         android:fontFamily="@font/lato_bold"
         android:text="Usuario"
         android:textColor="#000000"
@@ -116,12 +117,23 @@
         app:layout_constraintTop_toBottomOf="@+id/laBistecca4"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#B23A2C"
+        android:text="Ver Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastaGrill8" />
+
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
