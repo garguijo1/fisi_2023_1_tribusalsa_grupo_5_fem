@@ -23,8 +23,8 @@ class Inicio : AppCompatActivity() {
             startActivity(intent)
         }
         buttonLista.setOnClickListener {
-            //val intent = Intent(applicationContext, Inicio::class.java)
-            //startActivity(intent)
+            val intent = Intent(applicationContext, Menu::class.java)
+            startActivity(intent)
         }
     }
 
