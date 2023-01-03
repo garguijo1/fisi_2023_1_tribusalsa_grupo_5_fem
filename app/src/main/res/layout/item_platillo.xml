@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id = "@+id/ivPlatillo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:background = "@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvNombrePlatillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/ivPlatillo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tallarin saltado" />
+
+    <TextView
+        android:id="@+id/tvCategoriaPlatillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@id/ivPlatillo"
+        app:layout_constraintTop_toTopOf="@+id/tvNombrePlatillo"
+        tools:text="Wok" />
+
+    <TextView
+        android:id="@+id/tvDescripcionPlatillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@id/ivPlatillo"
+        app:layout_constraintTop_toTopOf="@+id/tvCategoriaPlatillo"
+        tools:text="Descripcion breve del platillo para no abrumar al comensal" />
+
+    <TextView
+        android:id="@+id/tvPrecioPlatillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
+        app:layout_constraintTop_toTopOf="@id/ivPlatillo"
+        tools:text="23.50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/txtRec"
@@ -40,7 +40,7 @@
 
 
     <EditText
-        android:id="@+id/edtCodigo"
+        android:id="@+id/edtNumTarjeta"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumTarjeta"
         app:layout_constraintVertical_bias="0.76" />
 
 
