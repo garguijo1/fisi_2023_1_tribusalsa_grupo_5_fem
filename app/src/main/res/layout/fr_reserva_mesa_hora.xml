@@ -78,14 +78,13 @@
         android:id="@+id/textViewMetodoPago4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="250dp"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
         android:text="Cantidad de personas"
         android:textColor="#7E0000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMetodoPago3" />
 
@@ -128,14 +127,13 @@
         android:id="@+id/textViewMetodoPago3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
         android:text="Horarios disponibles"
         android:textColor="#7E0000"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextViewMenMesahora" />
 
