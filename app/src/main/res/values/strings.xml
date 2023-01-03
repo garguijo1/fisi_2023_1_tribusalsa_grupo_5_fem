@@ -16,7 +16,7 @@
     <string name="puedes_acceder">Puedes acceder al apartado de historial de reservas para visualizar mayor detalle</string>
     <string name="imagenconfirmacioncarta">imagenConfirmacionCarta</string>
     <string name="total">Total:</string>
-<<<<<<< HEAD
+
     <string name="title_activity_menu">Menu</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -26,7 +26,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-=======
+
     <string name="la_bistecca_mesa_sede">LA BISTECCA</string>
     <string name="pasta_grill_mesa_sede">Pasta-Grill</string>
     <string name="holaReservaMesaSede">Hola,</string>
@@ -41,5 +41,5 @@
     <string name="n_de_tarjeta">N° de tarjeta</string>
     <string name="fecha_exp">Fecha Exp</string>
     <string name="cvv">CVV</string>
->>>>>>> f3828cd8720288f0fab0514743c43cb890d80a0f
+
 </resources>

@@ -31,7 +31,7 @@ class Inicio : AppCompatActivity() {
     }
 
     fun gotoMenu(){
-        val intent = Intent(applicationContext, Inicio::class.java)
+        val intent = Intent(applicationContext, Menu::class.java)
         startActivity(intent)
     }
 }
