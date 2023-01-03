@@ -1,9 +1,7 @@
 package com.example.vistas.io
 
-import com.example.vistas.io.response.LoginResponse
-import com.example.vistas.io.response.MensajeResponse
-import com.example.vistas.io.response.PlatillosResponse
-import com.example.vistas.io.response.SedesResponse
+import com.example.vistas.io.response.*
+import com.example.vistas.model.ReservacionModel
 import com.example.vistas.model.UserModel
 import com.example.vistas.model.userDTO
 import retrofit2.Call
@@ -20,6 +18,14 @@ interface ApiService {
     @POST( value = "clientes/crear")
     fun postCliente(@Body userModel: UserModel ):
             Call<MensajeResponse>
+
+    @Headers("Content-Type: application/json")
+    @POST( value = "reservaciones/crear")
+    fun postReservacion(
+        @Query( value = "accion") accion : Int,
+        @Body reservaModel: ReservacionModel ,
+        @Header("Authorization") token: String?
+    ): Call<ReservaCreatedResponse>
 
     @Headers("Content-Type: application/json")
     @GET( value = "platillos")

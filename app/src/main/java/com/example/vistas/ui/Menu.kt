@@ -23,15 +23,11 @@ class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fr_reserva_carta)
-        cargarNombre()
+
         cargarPlatillos()
     }
 
-    fun cargarNombre(){
-        val userName = findViewById<TextView>(R.id.nombreCliente)
-        val nombre = prefs.getName()
-        userName.setText(nombre)
-    }
+
 
 
     fun cargarPlatillos(){
