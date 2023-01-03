@@ -43,13 +43,11 @@
         android:id="@+id/pastaGrill6"
         android:layout_width="69dp"
         android:layout_height="18dp"
-        android:layout_marginStart="261dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/lato"
         android:textColor="#6C6C6C "
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca9"
         tools:text="Pasta-Grill" />
 
@@ -64,7 +62,7 @@
         tools:text="¡Escoge tus deliciosos platillos!" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listPlatillos"
+        android:id="@+id/listDetReserva"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"

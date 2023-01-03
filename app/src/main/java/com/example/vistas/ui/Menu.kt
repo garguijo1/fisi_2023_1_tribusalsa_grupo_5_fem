@@ -43,7 +43,7 @@ class Menu : AppCompatActivity() {
             ) {
                 println(response)
                 if (response.isSuccessful){
-                    val recyclerView = findViewById<RecyclerView>(R.id.listPlatillos)
+                    val recyclerView = findViewById<RecyclerView>(R.id.listDetReserva)
                     recyclerView.layoutManager = LinearLayoutManager(applicationContext)
                     val datos = response.body()
                     if (datos != null) {
