@@ -317,7 +317,7 @@
             android:translationY="40dp" />
 
         <TextView
-            android:id="@+id/textViewPrecio1"
+            android:id="@+id/txt"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"

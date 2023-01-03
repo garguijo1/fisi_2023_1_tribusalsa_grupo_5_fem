@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="176dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FAFAFA"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="#7E0000"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Reservas" />
+
+    <Switch
+        android:id="@+id/swt_estado"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/lato"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="En curso" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="411dp"
+        android:layout_height="72dp"
+        app:backgroundTint="#7E0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/laBistecca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="#7E0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="LA BISTECCA" />
+
+    <TextView
+        android:id="@+id/pastaGrill"
+        android:layout_width="69dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="261dp"
+        android:fontFamily="@font/lato"
+        android:textColor="#6C6C6C "
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laBistecca"
+        tools:text="Pasta-Grill" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cate_plat"
+        android:layout_width="368dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="256dp"
+        app:cardBackgroundColor="#EFF5CD"
+        app:cardCornerRadius="30dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cod_reserva"
+            android:layout_width="90dp"
+            android:layout_height="23dp"
+            android:fontFamily="@font/lato"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:translationX="15dp"
+            android:translationY="15dp"
+            tools:text="#41045" />
+
+        <Button
+            android:id="@+id/reserva_platillo"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/lato"
+            android:textAllCaps="false"
+            android:textColor="#0E0C0C"
+            android:textSize="14sp"
+            android:translationX="195dp"
+            android:translationY="5dp"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Reservar Platillo" />
+
+        <Button
+            android:id="@+id/detalla_reserva"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/lato"
+            android:textAllCaps="false"
+            android:textColor="#0E0C0C"
+            android:textSize="14sp"
+            android:translationX="195dp"
+            android:translationY="40dp"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Detallar Reserva" />
+
+        <TextView
+            android:id="@+id/deta_reserva"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#353333"
+            android:textSize="14sp"
+            android:translationX="15dp"
+            android:translationY="50dp"
+            tools:text="08:00 P.M del 06 nov 2022 " />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
