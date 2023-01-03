@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="150dp"
+    android:translationX="30dp">
 
     <ImageView
-        android:id = "@+id/ivPlatillo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        tools:background = "@color/black"
+        android:id="@+id/ivPlatillo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:translationX="15dp"
+        android:translationY="20dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        tools:background="@color/black" />
 
     <TextView
         android:id="@+id/tvNombrePlatillo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="#000000"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/ivPlatillo"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Tallarin saltado" />
@@ -27,30 +33,40 @@
         android:id="@+id/tvCategoriaPlatillo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@id/ivPlatillo"
-        app:layout_constraintTop_toTopOf="@+id/tvNombrePlatillo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombrePlatillo"
         tools:text="Wok" />
 
     <TextView
         android:id="@+id/tvDescripcionPlatillo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@id/ivPlatillo"
-        app:layout_constraintTop_toTopOf="@+id/tvCategoriaPlatillo"
+        android:layout_width="190dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPrecioPlatillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoriaPlatillo"
         tools:text="Descripcion breve del platillo para no abrumar al comensal" />
 
     <TextView
         android:id="@+id/tvPrecioPlatillo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
-        app:layout_constraintTop_toTopOf="@id/ivPlatillo"
         tools:text="23.50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

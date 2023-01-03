@@ -1,17 +1,12 @@
 package com.example.vistas.ui
 
-import android.content.Intent
-import android.graphics.LinearGradient
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vistas.R
 import com.example.vistas.io.ApiService
-import com.example.vistas.io.response.LoginResponse
 import com.example.vistas.io.response.PlatillosResponse
 import com.example.vistas.model.PlatilloAdapter
 import com.example.vistas.ui.MainActivity.Companion.prefs
@@ -27,7 +22,7 @@ class Menu : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fr_menu)
+        setContentView(R.layout.fr_reserva_carta)
         cargarNombre()
         cargarPlatillos()
     }
