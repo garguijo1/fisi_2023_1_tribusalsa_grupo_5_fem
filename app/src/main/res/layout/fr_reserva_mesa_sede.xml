@@ -4,29 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#FFFFFF"
     android:backgroundTint="#FAFAFA">
-
-    <ImageButton
-        android:id="@+id/imageButtonRetroceder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#7E0000"
-        android:contentDescription="@string/botonretroceder"
-        android:minHeight="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flecha" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSede1"
         android:layout_width="331dp"
         android:layout_height="120dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="310dp"
         android:layout_marginEnd="30dp"
         android:background="#FFFFFF"
         android:backgroundTint="#F1F7CF"
@@ -77,9 +64,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewSede2"
         android:layout_width="331dp"
-        android:layout_height="160dp"
+        android:layout_height="140dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="425dp"
+        android:layout_marginTop="455dp"
         android:layout_marginEnd="40dp"
         android:background="#FFFFFF"
         android:backgroundTint="#E8EB70"
@@ -103,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:translationY="0dp"
                 app:srcCompat="@drawable/hamburguesa" />
         </LinearLayout>
 
@@ -133,7 +121,7 @@
         android:layout_width="331dp"
         android:layout_height="120dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="610dp"
+        android:layout_marginTop="640dp"
         android:layout_marginEnd="40dp"
         android:background="#FFFFFF"
         android:backgroundTint="#F1F7CF"
@@ -186,7 +174,7 @@
         android:layout_width="250dp"
         android:layout_height="18dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="235dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/lato"
         android:text="Escoge alguna de nuestras sedes"
@@ -257,15 +245,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca2" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
-        android:layout_width="411dp"
-        android:layout_height="72dp"
-        app:backgroundTint="#7E0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

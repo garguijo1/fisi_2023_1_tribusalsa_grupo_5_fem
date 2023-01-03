@@ -36,12 +36,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRec" />
 
+
     <EditText
         android:id="@+id/edtUser"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/lato"
         android:hint="Usuario"
@@ -49,53 +50,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRec"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.118" />
 
     <EditText
         android:id="@+id/editPass"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:ems="10"
         android:fontFamily="@font/lato"
         android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUser"
-        app:layout_constraintVertical_bias="0.032" />
-
-
-    <TextView
-        android:id="@+id/txtHiper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato"
-        android:text="¿Haz olvidado tu contraseña?"
-        android:textColor="#6C6C6C"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnIng"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPass"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.102" />
 
     <Button
         android:id="@+id/btnReg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="408dp"
-        android:backgroundTint="#000000"
 
+        android:backgroundTint="#000000"
         android:fontFamily="@font/lato_bold"
         android:text="Registrarse"
-        android:textColor="#7E0000"
+        android:textColor="#D51212"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -108,17 +94,30 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="70dp"
-        android:layout_marginBottom="328dp"
         android:backgroundTint="#7E0000"
         android:fontFamily="@font/lato_bold"
         android:text="Ingresar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPass" />
+
+    <TextView
+        android:id="@+id/txtHiper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="¿Haz olvidado tu contraseña?"
+        android:textColor="#6C6C6C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPass"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.195" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
