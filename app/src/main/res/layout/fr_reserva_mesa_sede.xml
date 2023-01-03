@@ -8,167 +8,6 @@
     android:background="#FFFFFF"
     android:backgroundTint="#FAFAFA">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSede1"
-        android:layout_width="331dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="30dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#F1F7CF"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:padding="2dp"
-            android:translationX="210sp">
-
-            <ImageView
-                android:id="@+id/imageViewSede1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/hamburguesa" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textViewNombreSede1"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Sede San Isidro"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="15dp" />
-
-        <TextView
-            android:id="@+id/textViewNombreDireccion1"
-            android:layout_width="186dp"
-            android:layout_height="31dp"
-            android:fontFamily="@font/lato"
-            android:text="Av. Primavera 545, San Borja 15037"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="40dp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSede2"
-        android:layout_width="331dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="455dp"
-        android:layout_marginEnd="40dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#E8EB70"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:padding="2dp"
-            android:translationX="210sp"
-            android:translationY="20dp">
-
-            <ImageView
-                android:id="@+id/imageViewSede2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:translationY="0dp"
-                app:srcCompat="@drawable/hamburguesa" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textViewNombreSede2"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Sede Salaverry"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="15dp" />
-
-        <TextView
-            android:id="@+id/textViewNombreDireccion2"
-            android:layout_width="186dp"
-            android:layout_height="70dp"
-            android:fontFamily="@font/lato"
-            android:text="Real Plaza Salaverry, Nivel 3 Av Felipe San, Av. Gral. Salaverry 2370, Jesús María 15076"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="40dp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSede3"
-        android:layout_width="331dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="640dp"
-        android:layout_marginEnd="40dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#F1F7CF"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_margin="15dp"
-            android:orientation="horizontal"
-            android:padding="2dp"
-            android:translationX="210sp">
-
-            <ImageView
-                android:id="@+id/imageViewSede3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/hamburguesa" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textViewNombreSede3"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Sede Chacarilla"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="15dp" />
-
-        <TextView
-            android:id="@+id/textViewNombreDireccion3"
-            android:layout_width="186dp"
-            android:layout_height="31dp"
-            android:fontFamily="@font/lato"
-            android:text="Av. Primavera 545, San Borja 15037"
-            android:textColor="#6C6C6C "
-            android:translationX="30dp"
-            android:translationY="40dp" />
-
-    </androidx.cardview.widget.CardView>
-
     <TextView
         android:id="@+id/textViewEscogeSedeReservaMesaSede"
         android:layout_width="250dp"
@@ -244,5 +83,16 @@
         app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listSedes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEscogeSedeReservaMesaSede"
+        app:layout_constraintVertical_bias="0.208" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
