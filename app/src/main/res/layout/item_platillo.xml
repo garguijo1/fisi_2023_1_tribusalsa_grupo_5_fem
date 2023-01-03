@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="350dp"
     android:layout_height="150dp"
-    android:translationX="30dp">
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
 
     <ImageView
         android:id="@+id/ivPlatillo"
@@ -21,10 +22,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="22dp"
         android:fontFamily="@font/lato_bold"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@id/ivPlatillo"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Tallarin saltado" />
@@ -34,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="7dp"
         android:fontFamily="@font/lato"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
@@ -46,13 +47,11 @@
         android:layout_width="190dp"
         android:layout_height="37dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/lato"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/tvPrecioPlatillo"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPlatillo"
         app:layout_constraintTop_toBottomOf="@+id/tvCategoriaPlatillo"
         tools:text="Descripcion breve del platillo para no abrumar al comensal" />
@@ -62,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/lato"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
