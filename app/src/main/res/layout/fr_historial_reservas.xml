@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="128dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FAFAFA"
         android:fontFamily="@font/lato_bold"
@@ -21,7 +21,7 @@
         android:textSize="48sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Reservas" />
+        android:text="Reservas" />
 
     <TextView
         android:id="@+id/laBistecca"
@@ -34,7 +34,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="LA BISTECCA" />
+        android:text="LA BISTECCA" />
 
     <TextView
         android:id="@+id/pastaGrill"
@@ -49,82 +49,17 @@
         app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca"
-        tools:text="Pasta-Grill" />
+        android:text="Pasta-Grill" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cate_plat"
-        android:layout_width="320dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="30dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="30dp"
-        app:cardBackgroundColor="#EFF5CD"
-        app:cardCornerRadius="30dp"
-        app:cardPreventCornerOverlap="false"
+        android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17">
-
-        <TextView
-            android:id="@+id/cod_reserva"
-            android:layout_width="90dp"
-            android:layout_height="23dp"
-            android:fontFamily="@font/lato_bold"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:translationX="30dp"
-            android:translationY="15dp"
-            tools:text="#41045" />
-
-        <Button
-            android:id="@+id/reserva_platillo"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/lato_bold"
-            android:textAllCaps="false"
-            android:textColor="#0E0C0C"
-            android:textSize="12sp"
-            android:translationX="150dp"
-            android:translationY="20dp"
-            tools:ignore="TouchTargetSizeCheck"
-            tools:text="Reservar Platillo" />
-
-        <Button
-            android:id="@+id/detalla_reserva"
-            android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:backgroundTint="#FFFFFF"
-            android:fontFamily="@font/lato_bold"
-            android:textAllCaps="false"
-            android:textColor="#0E0C0C"
-            android:textSize="12sp"
-            android:translationX="150dp"
-            android:translationY="55dp"
-            tools:ignore="TouchTargetSizeCheck"
-            tools:text="Detallar Reserva" />
-
-        <TextView
-            android:id="@+id/TextViewDataHoraReserva"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:textColor="#353333"
-            android:textSize="14sp"
-            android:translationX="30dp"
-            android:translationY="50dp"
-            tools:text="08:00 P.M " />
-
-        <TextView
-            android:id="@+id/textViewDataFechaReserva"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:textColor="#353333"
-            android:textSize="14sp"
-            android:translationX="30dp"
-            android:translationY="75dp"
-            tools:text="06 nov 2022 " />
-    </androidx.cardview.widget.CardView>
-
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 </androidx.constraintlayout.widget.ConstraintLayout>

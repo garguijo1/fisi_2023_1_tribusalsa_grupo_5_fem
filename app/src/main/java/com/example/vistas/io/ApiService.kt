@@ -41,6 +41,13 @@ interface ApiService {
         @Header("Authorization") token: String?
     ):  Call<SedesResponse>
 
+    @Headers("Content-Type: application/json")
+    @GET( value = "reservaciones/cliente/{id}")
+    fun getReservasCliente(
+        @Path( value = "id") id : Int,
+        @Query( value = "accion") accion : Int,
+        @Header("Authorization") token: String?
+    ):  Call<ReservacionesResponse>
 
 
     companion object Factory{

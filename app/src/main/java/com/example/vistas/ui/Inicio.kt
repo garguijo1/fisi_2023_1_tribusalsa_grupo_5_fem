@@ -23,7 +23,7 @@ class Inicio : AppCompatActivity() {
             startActivity(intent)
         }
         buttonLista.setOnClickListener {
-            val intent = Intent(applicationContext, Menu::class.java)
+            val intent = Intent(applicationContext, HistorialReserva::class.java)
             startActivity(intent)
         }
     }
