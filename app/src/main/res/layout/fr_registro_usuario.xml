@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="60dp"
         android:autoText="false"
         android:backgroundTint="#B23A2C"
@@ -22,40 +21,9 @@
         android:textSize="16sp"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUserCorreoRecUser" />
-
-    <EditText
-        android:id="@+id/edtUserCorreoRecUser"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="60dp"
-        android:autofillHints=""
-        android:backgroundTint="#FFFFFF"
-        android:fontFamily="@font/lato_bold"
-        android:hint="Ingresar correo de recuperación"
-        android:minHeight="48dp"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCorreoRecUser" />
-
-    <TextView
-        android:id="@+id/textViewCorreoRecUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/lato_bold"
-        android:text="Correo de recuperación"
-        android:textColor="#7E0000"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUserTelUser" />
+        tools:layout_editor_absoluteY="667dp" />
 
     <EditText
         android:id="@+id/editPassContUser"
@@ -194,7 +162,7 @@
         android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/lato_bold"
-        android:hint="Ingresar apellidos"
+        android:hint="Ingresar documento"
         android:minHeight="48dp"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -232,9 +200,10 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/txtDe2"
@@ -256,7 +225,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Nombres"
+        android:text="Nombres y apellidos"
         android:textColor="#7E0000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -269,7 +238,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Apellidos"
+        android:text="DNI"
         android:textColor="#7E0000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"

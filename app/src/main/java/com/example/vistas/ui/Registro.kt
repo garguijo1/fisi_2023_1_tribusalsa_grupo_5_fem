@@ -9,21 +9,12 @@ import android.widget.TextView
 import com.example.vistas.R
 import com.example.vistas.ui.MainActivity.Companion.prefs
 
-class Inicio : AppCompatActivity() {
+class Registro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fr_reserva_mesa_fecha)
-        cargarNombre()
-
-
-
+        setContentView(R.layout.fr_registro_usuario)
 
     }
 
-    fun cargarNombre(){
-        val userName = findViewById<TextView>(R.id.nombreCliente)
-        val nombre = prefs.getName()
-        userName.setText(nombre)
-    }
 
 }

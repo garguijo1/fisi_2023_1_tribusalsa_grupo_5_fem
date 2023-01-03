@@ -32,10 +32,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.fr_inicio)
         prefs = Prefs(applicationContext)
 
+
         val botonLogin: Button = findViewById(R.id.btnIng)
+        val botonReg: Button = findViewById(R.id.btnReg)
 
         botonLogin.setOnClickListener {
             performLogin()
+        }
+
+        botonReg.setOnClickListener {
+            gotoRegistro()
         }
     }
 
@@ -88,5 +94,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun showErrorName(){
         Toast.makeText(this, "Todos los campos deben ser llenados", Toast.LENGTH_LONG).show()
+    }
+
+    private fun gotoRegistro(){
+        val intentRegistro = Intent(applicationContext, Registro::class.java)
+        startActivity(intentRegistro)
     }
 }

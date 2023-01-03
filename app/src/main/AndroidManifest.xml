@@ -23,27 +23,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".ui.reccod"
+            android:name=".ui.Registro"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".ui.recuperarcorreo"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ui.recuperarcontra"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".ui.Inicio"
             android:exported="false">
