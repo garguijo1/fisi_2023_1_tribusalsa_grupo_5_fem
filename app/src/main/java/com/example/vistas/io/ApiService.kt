@@ -59,7 +59,7 @@ interface ApiService {
 
 
     companion object Factory{
-        private const val BASE_URL = "http://10.0.2.2:9000/api/v1/"
+        private const val BASE_URL = "http://aks-proyecto.35484a235db345ef9c3f.eastus.aksapp.io/api/v1/"
         fun create(): ApiService{
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
