@@ -8,31 +8,6 @@
     android:backgroundTint="#FAFAFA"
     tools:context=".ui.MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButtonRetroceder4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="48dp"
-        android:backgroundTint="#7E0000"
-        android:contentDescription="@string/botonretroceder"
-        android:minHeight="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flecha" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
-        android:layout_width="411dp"
-        android:layout_height="72dp"
-        app:backgroundTint="#7E0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/textViewTotal1"
         android:layout_width="wrap_content"
@@ -53,7 +28,6 @@
         android:id="@+id/laBistecca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/lato_bold"
@@ -62,8 +36,6 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -99,13 +71,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="230dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#E8EB70"
         android:fontFamily="@font/lato_bold"
         android:text="Elegir método de pago"
@@ -114,9 +86,8 @@
         android:textColor="#000000"
         android:textSize="14sp"
         app:cornerRadius="21.5dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTotal1" />
 
@@ -143,14 +114,12 @@
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:translationY="260dp"
+        android:translationY="50dp"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218">
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <LinearLayout
             android:layout_width="70dp"
@@ -214,15 +183,14 @@
         android:layout_width="331dp"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="40dp"
-        android:translationY="130dp"
+        android:translationY="20dp"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218">
+        app:layout_constraintTop_toBottomOf="@+id/cardViewSede2">
 
         <LinearLayout
             android:layout_width="70dp"
@@ -286,14 +254,13 @@
         android:layout_width="331dp"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="40dp"
         app:cardCornerRadius="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="70dp"
@@ -357,7 +324,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/lato"
         android:text="S/ X.00"
         android:textColor="#000000"
