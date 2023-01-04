@@ -1,6 +1,7 @@
 package com.example.vistas.util
 
 import android.content.Context
+import com.example.vistas.model.PlatilloFinal
 
 class Prefs(val context: Context) {
 
@@ -9,6 +10,8 @@ class Prefs(val context: Context) {
     val SHARED_USUARIO = "usuario"
     val SHARED_TOKEN = "token"
     val SHARED_NOMBRE = "nombre"
+
+
 
     val storage = context.getSharedPreferences(SHARED_NAME,0)
 
@@ -27,6 +30,11 @@ class Prefs(val context: Context) {
     fun saveToken(token : String){
         storage.edit().putString(SHARED_TOKEN,token).apply()
     }
+
+
+
+
+
 
     fun getId():Int{
         return storage.getInt(SHARED_ID_USER,0)
