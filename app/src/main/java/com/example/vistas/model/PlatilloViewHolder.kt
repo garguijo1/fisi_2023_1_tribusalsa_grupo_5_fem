@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vistas.R
 
 
-class PlatilloViewHolder(view : View) : RecyclerView.ViewHolder(view){
+class PlatilloViewHolder(val view : View,val listener:OnClickPlatillo) : RecyclerView.ViewHolder(view){
 
     val nombrePLatillo = view.findViewById<TextView>(R.id.tvNombrePlatillo)
     val categoriaPLatillo = view.findViewById<TextView>(R.id.tvCategoriaPlatillo)
@@ -18,6 +18,17 @@ class PlatilloViewHolder(view : View) : RecyclerView.ViewHolder(view){
     val fotoPLatillo = view.findViewById<ImageView>(R.id.ivPlatillo)
 
     fun render(PlatilloModel : Platillo){
+
+        view.setOnClickListener{
+            listener.onClick(
+                PlatilloModel.id_platillo,
+                PlatilloModel.nombre,
+                PlatilloModel.descripcion,
+                PlatilloModel.foto,
+                PlatilloModel.precio
+            )
+        }
+
         nombrePLatillo.text = PlatilloModel.nombre
         categoriaPLatillo.text = PlatilloModel.categoria
         descripcionPLatillo.text = PlatilloModel.descripcion

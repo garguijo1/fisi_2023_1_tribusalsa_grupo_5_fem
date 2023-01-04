@@ -1,5 +1,6 @@
 package com.example.vistas.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -58,11 +59,19 @@ class HistorialReserva : AppCompatActivity(),OnReservaClickListener {
         } )
     }
 
-    override fun onClickDetallar() {
-        println("detallando ando")
+    override fun onClickDetallar(codigo: Int, fecha : String, sede : String, sillas : Int) {
+        val intentDetalle = Intent(this,DetalleReserva::class.java)
+
+        intentDetalle.putExtra("codigo",codigo)
+        intentDetalle.putExtra("fecha",fecha)
+        intentDetalle.putExtra("sede",sede)
+        intentDetalle.putExtra("sillas",sillas)
+        startActivity(intentDetalle)
     }
 
-    override fun onClickAgregar() {
-        println("agregando ando")
+    override fun onClickAgregar(codigo: Int) {
+        val intentAgregar = Intent(this,Menu::class.java)
+        intentAgregar.putExtra("id_reservacion",codigo)
+        startActivity(intentAgregar)
     }
 }

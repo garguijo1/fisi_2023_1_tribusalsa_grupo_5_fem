@@ -19,7 +19,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="LA BISTECCA" />
+        android:text="LA BISTECCA" />
 
     <TextView
         android:id="@+id/pastaGrill"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca"
-        tools:text="Pasta-Grill" />
+        android:text="Pasta-Grill" />
 
     <TextView
         android:id="@+id/textView11"
@@ -78,7 +78,7 @@
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="▼" />
+        android:text="▲" />
 
     <TextView
         android:id="@+id/textView6"
@@ -105,7 +105,7 @@
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="▲" />
+        android:text="▼" />
 
     <TextView
         android:id="@+id/textView16"
@@ -126,7 +126,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="#E8EB70"
         android:fontFamily="@font/lato_bold"
@@ -134,8 +134,9 @@
         android:textColor="#000000"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:text="Agregar a la Reserva" />
+        android:text="Agregar a la Reserva" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

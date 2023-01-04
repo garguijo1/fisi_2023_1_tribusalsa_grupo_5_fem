@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Carta" />
+        android:text="Carta" />
 
     <TextView
         android:id="@+id/laBistecca9"
@@ -37,7 +37,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="LA BISTECCA" />
+        android:text="LA BISTECCA" />
 
     <TextView
         android:id="@+id/pastaGrill6"
@@ -49,7 +49,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/laBistecca9"
-        tools:text="Pasta-Grill" />
+        android:text="Pasta-Grill" />
 
     <TextView
         android:id="@+id/textView12"
@@ -59,7 +59,7 @@
         android:layout_marginTop="188dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="¡Escoge tus deliciosos platillos!" />
+        android:text="¡Escoge tus deliciosos platillos!" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listDetReserva"

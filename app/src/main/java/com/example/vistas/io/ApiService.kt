@@ -49,6 +49,14 @@ interface ApiService {
         @Header("Authorization") token: String?
     ):  Call<ReservacionesResponse>
 
+    @Headers("Content-Type: application/json")
+    @GET( value = "reservaciones/detallar/{id}")
+    fun getDetalleReserva(
+        @Path( value = "id") id : Int,
+        @Query( value = "accion") accion : Int,
+        @Header("Authorization") token: String?
+    ):  Call<PlatilloDetalleResponse>
+
 
     companion object Factory{
         private const val BASE_URL = "http://10.0.2.2:9000/api/v1/"

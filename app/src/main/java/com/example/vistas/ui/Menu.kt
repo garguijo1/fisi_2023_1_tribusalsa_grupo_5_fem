@@ -1,5 +1,6 @@
 package com.example.vistas.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -8,13 +9,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.vistas.R
 import com.example.vistas.io.ApiService
 import com.example.vistas.io.response.PlatillosResponse
+import com.example.vistas.model.OnClickPlatillo
 import com.example.vistas.model.PlatilloAdapter
 import com.example.vistas.ui.MainActivity.Companion.prefs
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Menu : AppCompatActivity() {
+class Menu : AppCompatActivity(),OnClickPlatillo {
+
+    private val claseGlabal = this
 
     private val apiService : ApiService by lazy{
         ApiService.create()
@@ -44,7 +48,7 @@ class Menu : AppCompatActivity() {
                     val datos = response.body()
                     if (datos != null) {
                        val data = datos.platillos
-                        recyclerView.adapter = PlatilloAdapter(data)
+                        recyclerView.adapter = PlatilloAdapter(data,claseGlabal)
                     }
 
                     println(datos)
@@ -56,6 +60,26 @@ class Menu : AppCompatActivity() {
             }
 
         } )
+    }
+
+    override fun onClick(
+        idPlatillo: Int,
+        nombre: String,
+        descripcion: String,
+        foto: String,
+        precio: Float
+    ) {
+        val intentPlatillo = Intent(this,AgregarPlatillo::class.java)
+
+        val reservacion : Int = intent.getIntExtra("id_reservacion",0)
+
+        intentPlatillo.putExtra("id_reservacion",reservacion)
+        intentPlatillo.putExtra("id_platillo",idPlatillo)
+        intentPlatillo.putExtra("nombre",nombre)
+        intentPlatillo.putExtra("descripcion",descripcion)
+        intentPlatillo.putExtra("foto",foto)
+        intentPlatillo.putExtra("precio",precio)
+        startActivity(intentPlatillo)
     }
 
 

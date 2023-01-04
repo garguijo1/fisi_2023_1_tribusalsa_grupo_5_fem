@@ -13,13 +13,14 @@
         android:layout_width="310dp"
         android:layout_height="160dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="30dp"
         android:translationY="40dp"
         app:cardBackgroundColor="#EFF5CD"
         app:cardCornerRadius="30dp"
         app:cardPreventCornerOverlap="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextViewCodDetReserva">
 
@@ -28,22 +29,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
+            android:text="Fecha y hora"
             android:textColor="#000000"
             android:textSize="23sp"
             android:translationX="30dp"
-            android:translationY="15dp"
-            tools:text="Fecha y hora" />
+            android:translationY="15dp" />
 
         <TextView
             android:id="@+id/cod_reserva3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
+            android:text="Local"
             android:textColor="#000000"
             android:textSize="23sp"
             android:translationX="30dp"
-            android:translationY="85dp"
-            tools:text="Local" />
+            android:translationY="85dp" />
+
+        <TextView
+            android:id="@+id/cod_reserva2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Sillas"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:translationX="180dp"
+            android:translationY="85dp" />
 
         <TextView
             android:id="@+id/TextViewDataHoraReserva"
@@ -66,6 +78,17 @@
             android:translationX="30dp"
             android:translationY="120dp"
             tools:text="Sede San Isidro" />
+
+        <TextView
+            android:id="@+id/textViewSillas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="#353333"
+            android:textSize="15sp"
+            android:translationX="180dp"
+            android:translationY="120dp"
+            tools:text="8" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -124,4 +147,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="LA BISTECCA" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listDetReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cate_plat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
